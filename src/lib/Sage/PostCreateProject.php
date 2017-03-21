@@ -15,13 +15,14 @@ class PostCreateProject
             $io->write('<info>Define theme headers. Press enter key for default.</info>');
 
             $theme_headers_default = [
-                'name'        => 'Sage Starter Theme',
-                'uri'         => 'https://roots.io/sage/',
-                'description' => 'Sage is a WordPress starter theme.',
+                'name'        => 'Starter Theme',
+                'uri'         => 'https://github.com/withfatpanda/starter-theme-wordpress',
+                'description' => 'A WordPress starter theme, based on Sage 9',
                 'version'     => '9.0.0-beta.2',
-                'author'      => 'Roots',
-                'author_uri'  => 'https://roots.io/'
+                'author'      => 'Fat Panda',
+                'author_uri'  => 'https://withfatpanda.com'
             ];
+
             $theme_headers = [
               'name'        => $io->ask('<info>Theme Name [<comment>'.$theme_headers_default['name'].'</comment>]:</info> ', $theme_headers_default['name']),
               'uri'         => $io->ask('<info>Theme URI [<comment>'.$theme_headers_default['uri'].'</comment>]:</info> ', $theme_headers_default['uri']),
