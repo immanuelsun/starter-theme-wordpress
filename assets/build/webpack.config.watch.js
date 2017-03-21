@@ -14,11 +14,12 @@ module.exports = {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
-    new BrowserSyncPlugin({
-      target: process.env.DEVURL || config.devUrl,
-      proxyUrl: config.proxyUrl,
-      watch: config.watch,
-      delay: 500,
-    }),
+
+    // new BrowserSyncPlugin({
+    //   target: process.env.DEVURL || config.devUrl,
+    //   proxyUrl: config.proxyUrl,
+    //   watch: config.watch,
+    //   delay: 500,
+    // }),
   ],
 };

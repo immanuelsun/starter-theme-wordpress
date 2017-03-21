@@ -1,10 +1,16 @@
 {
-  "name": "roots/sage",
+  "name": "withfatpanda/starter-theme-wordpress",
+  "version": "9.0.0-beta.2",
   "type": "wordpress-theme",
   "license": "MIT",
-  "description": "WordPress starter theme with a modern development workflow",
+  "description": "It's Sage 9, but with Laravel Mix, Boostrap 4, Font Awesome, and Vue.js",
   "homepage": "https://roots.io/sage/",
   "authors": [
+    {
+      "name": "Aaron Collegeman",
+      "email": "aaron@withfatpanda.com",
+      "homepage": "https://aaroncollegeman.com"
+    },
     {
       "name": "Ben Word",
       "email": "ben@benword.com",
@@ -20,12 +26,12 @@
     "wordpress"
   ],
   "support": {
-    "issues": "https://github.com/roots/sage/issues",
-    "forum": "https://discourse.roots.io/"
+    "issues": "https://github.com/withfatpanda/starter-theme-wordpress/issues"
   },
   "autoload": {
     "psr-4": {
-      "Roots\\Sage\\": "src/lib/Sage/"
+      "Roots\\Sage\\": "src/lib/Sage/",
+      "FatPanda\\": "src/lib/FatPanda"
     }
   },
   "require": {
@@ -43,8 +49,6 @@
     ],
     "post-create-project-cmd": [
         "Roots\\Sage\\PostCreateProject::updateHeaders",
-        "Roots\\Sage\\PostCreateProject::selectFramework",
-        "Roots\\Sage\\PostCreateProject::addFontAwesome",
         "Roots\\Sage\\PostCreateProject::buildOptions"
     ]
   }

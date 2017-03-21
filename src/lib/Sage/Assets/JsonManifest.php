@@ -23,7 +23,15 @@ class JsonManifest implements ManifestInterface
      */
     public function __construct($manifestPath, $distUri)
     {
-        $this->manifest = file_exists($manifestPath) ? json_decode(file_get_contents($manifestPath), true) : [];
+        $this->manifest = [];
+
+        $raw = file_exists($manifestPath) ? json_decode(file_get_contents($manifestPath), true) : [];
+
+        // normalize by stripping leading slashes from keys and values
+        foreach($raw as $ref => $path) {
+            $this->manifest[ltrim($ref, '/')] = ltrim($path, '/');
+        }
+
         $this->dist = $distUri;
     }
 

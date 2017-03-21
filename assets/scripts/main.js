@@ -1,8 +1,5 @@
-/** import external dependencies */
-import 'jquery';
-import 'bootstrap';
+import './bootstrap';
 
-/** import local dependencies */
 import Router from './util/Router';
 import common from './routes/common';
 import home from './routes/home';

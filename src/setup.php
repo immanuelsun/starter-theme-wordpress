@@ -116,7 +116,7 @@ add_action('after_setup_theme', function () {
             return ["{$path}/templates", $path];
         })->unique()->toArray();
     config([
-        'assets.manifest' => "{$paths['dir.stylesheet']}/dist/assets.json",
+        'assets.manifest' => "{$paths['dir.stylesheet']}/dist/mix-manifest.json",
         'assets.uri'      => "{$paths['uri.stylesheet']}/dist",
         'view.compiled'   => "{$paths['dir.upload']}/cache/compiled",
         'view.namespaces' => ['App' => WP_CONTENT_DIR],

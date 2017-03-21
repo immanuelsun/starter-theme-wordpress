@@ -1,0 +1,8 @@
+.navbar { 
+  .container {
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

@@ -1,3 +1,20 @@
+# [Starter Theme for WordPress]
+
+This is a WordPress Theme starter kit that builds on the very awesome Sage.
+
+## Different from Sage 9:
+
+* Bootstrap 4, by default
+* Font Awesome included, by default
+* [Laravel Mix](https://github.com/JeffreyWay/laravel-mix) as the front-end for Webpack
+* No browsersync 
+
+### Build commands
+
+* `yarn run watch` — Compile assets when file changes are made
+* `yarn run dev` — Compile and optimize the files in your assets directory
+* `yarn run production` — Compile assets for production
+
 # [Sage](https://roots.io/sage/)
 [![Packagist](https://img.shields.io/packagist/vpre/roots/sage.svg?style=flat-square)](https://packagist.org/packages/roots/sage)
 [![devDependency Status](https://img.shields.io/david/dev/roots/sage.svg?style=flat-square)](https://david-dm.org/roots/sage#info=devDependencies)

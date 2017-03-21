@@ -1,0 +1,14 @@
+i.fa + span {
+  margin-left: 5px;
+}
+
+span + i.fa {
+  margin-right: 5px;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  span {
+    text-decoration: underline;
+  }
+}

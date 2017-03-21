@@ -104,6 +104,8 @@ class PostCreateProject
         $io = $event->getIO();
 
         if ($io->isInteractive()) {
+
+            
             $io->write('<info>Configure build settings. Press enter key for default.</info>');
 
             $browsersync_settings_default = [
